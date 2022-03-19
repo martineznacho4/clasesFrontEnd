@@ -1,0 +1,91 @@
+h1{
+    text-align: center;
+    color: #005677;
+    background-color: #C9FBFF;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 35px;
+    word-spacing: 10px;
+    letter-spacing: 10px;
+    margin-top: 0;
+    display: ;
+}
+
+h4{
+    color: #C9FBFF;
+    background-color: #005677;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+
+    width: ;
+}
+
+header{
+    background-image: url('https://professional-electrician.com/wp-content/uploads/2019/11/COPYRIGHT-PESHKOV.jpeg');
+    background-repeat: repeat;
+}
+
+body{
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+
+
+footer{
+    background-color: #005677;
+}
+
+
+
+
+#separador{
+    height: 100px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #151c26;
+}
+
+#logo{
+    display: block;
+    margin-left: auto;
+    width: auto;
+    height: 300px;
+    
+}
+
+.bold{
+    font-weight: bold;
+    font-size: 15px;
+    color: #16181c;
+}
+
+.personales{
+    font-style: italic;
+}
+
+.social{
+    text-align: center;
+    word-spacing: 10px;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 20px;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+
+.icon{
+    display: inline-block;
+    
+    margin: auto;
+}

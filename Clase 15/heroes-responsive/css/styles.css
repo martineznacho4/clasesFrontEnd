@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-size: 10px;
+}
+
+.top-header {
+    background-color: #D1891C;
+    color: #333333;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.bottom-header {
+    background-color: #00669F;
+    color: #FFFFFF;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.main-container {
+    display: flex;
+    background-color: #E5E5E5;
+    justify-content: space-around;
+    /* ACÁ PODES USAR UNA PROP FLEX PARA ELRESPONSIVE */
+}
+
+.hero-container {
+    margin: 5vh 1vh;
+    width: 25vw;
+    background-color: #F3F3F3;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.76);
+}
+
+.portada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+}
+
+/* Backgrounds */
+
+.batman {
+    background-image: url(/img/portada-batman.png);
+}
+
+.harley {
+    background-image: url(../img/portada-harley.png) ;
+}
+
+.superman {
+    background-image: url(../img/portada-superman.png) ;
+}
+
+.wwoman {
+    background-image: url(../img/portada-wwoman.png) ;
+}
+
+.fas {
+    color: red;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+
+.profile {
+    border-radius: 50%;
+    height: 15vh;
+    width: auto;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+    color: #000000;
+    font-size: 2.5rem;
+}
+
+.content-container {
+    display: flex;
+    margin-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: #333333;
+    font-size: 1.2rem;
+}
+
+.boton-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.boton-container button {
+    background-color: #00669F;
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 0.2rem;
+    margin-bottom: 2rem;
+    color: #F3F3F3;
+}
+
+
+/* MEDIA QUERIES :D */
+
+/* Mobile */
+@media (max-width: 425px) {
+    
+    .main-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-container{
+        width: 90%;
+        background-color: #333333;
+        box-shadow: 5px 5px 10px 0px rgba(73, 73, 73, 0.76);
+    }
+
+    .title-container{
+        color: #ebe6e6;
+    }
+
+    .content-container{
+        color: #cecaca;
+    }
+
+    .main-container{
+        background-color: #201e1e;
+    }
+
+
+}
+
+/* Tablet */
+@media (min-width: 425px) and (max-width: 768px){
+
+    .main-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-container{
+        width: 90%;
+        background-color: #333333;
+        box-shadow: 5px 5px 10px 0px rgba(73, 73, 73, 0.76);
+    }
+
+    .title-container{
+        color: #ebe6e6;
+    }
+
+    .content-container{
+        color: #cecaca;
+    }
+
+    .main-container{
+        background-color: #201e1e;
+    }
+
+}
