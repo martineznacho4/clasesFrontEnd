@@ -16,7 +16,7 @@ body{
 
 main{
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 
 #logo{
@@ -27,7 +27,8 @@ main{
 
 .left{
     position: fixed;
-    left: 15vw;
+    width: 250px;
+    left: 20vw;
 }
 
 .fa-twitter{
@@ -35,7 +36,7 @@ main{
 }
 
 .left nav {
-    font-size: 25px;
+    font-size: 23px;
     font-weight: bold;
 }
 
@@ -67,7 +68,9 @@ main{
 
 
 .center{
-    border-left-color: #00BA7C;
+    border-color: black #00BA7C;
+    margin-left: calc(20vw + 255px);
+    width: calc(100vw / 3);
     border-width: 1px;
     border-style: solid;
 }
@@ -91,3 +94,35 @@ main{
     font-weight: bolder;
     display: inline;
 }
+
+#portada {
+    background-color: rgb(78, 78, 78);
+    height: 200px;
+}
+
+#perfil{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#perfil a, .perfil-header{
+    position: relative;
+    bottom: 50%;
+    left: 20px;
+    border-radius: 50%;
+    height: 150px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    
+}
+
+
+/* #perfil a{
+    position: relative;
+    border-radius: 50%;
+    border-color: aqua;
+    border-style: solid;
+        
+
+} */
