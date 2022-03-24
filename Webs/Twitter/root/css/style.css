@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    background-color: rgb(21, 21, 21);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+#logo{
+    display: flex;
+    justify-content: left;
+    font-size: 30px;
+}
+
+.left{
+    position: fixed;
+    left: 15vw;
+}
+
+.fa-twitter{
+    padding-bottom: 30px;
+}
+
+.left nav {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.left ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.left .fa-solid{
+    padding-right: 10px;
+    width: 30px;
+}
+
+.left li{
+    padding-bottom: 30px;
+}
+
+#boton-twit{
+    padding: 10px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00BA7C;
+    border-radius: 50px;
+}
+
+
+.center{
+    border-left-color: #00BA7C;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.center header{
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.fa-arrow-left{
+    padding: 20px;
+}
+
+#title{
+    padding-left: 20px;
+}
+
+.name{
+    font-size: 20px;
+    font-weight: bolder;
+    display: inline;
+}

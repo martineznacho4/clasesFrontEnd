@@ -1,0 +1,155 @@
+body{
+    margin: 0;
+    
+}
+
+header{
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    background-color: #202020;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 30px 10px 30px;
+    color: rgb(228, 224, 224);
+}
+
+header img{
+    width: 10vw;
+    height: 30px;
+}
+
+
+
+.header-text-container{
+    font-family: 'Sen', sans-serif;
+}
+
+.header-text{
+    font-weight: bold;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+h1{
+    font-family: 'Sen', sans-serif;
+    font-size: 50px;
+    line-height: 5px;
+
+    width: fit-content;
+    
+    border-bottom-style: solid;
+    border-bottom-width: 20px;
+    border-bottom-color: #ffff01;
+}
+
+main{
+    display: flex;
+    align-items: flex-start;
+    padding-top: 50px;
+}
+
+.nav-left{
+    position: fixed;
+    width: 250px;
+    
+    display: inline-block;
+    padding-left: 60px;
+    font-family: 'Sen', sans-serif;
+    background-color: rgb(247, 247, 247);
+    border-style: groove;
+    border-radius: 10px;
+}
+
+.nav-left h5{
+    margin: 0px 5px 20px 5px;
+}
+
+.nav-u-list{
+    list-style: none;
+}
+
+.nav-u-list a{
+    text-decoration: none;
+    color: #202020;
+}
+h4{
+    font-size: 25px;
+}
+h5{
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+section{
+    padding-left: 370px;
+    padding-right: 200px;
+    font-family: 'Sen', sans-serif;
+    padding-bottom: 500px;
+}
+
+section li{
+    font-weight: bold;
+    list-style: square;
+}
+
+section h2{
+    font-size: 40px;
+}
+
+section a{
+    text-decoration: none;
+    color: #071cd6;
+    font-weight: bold;
+}
+
+.tag-text{
+    background-color: rgb(231, 231, 231) ;
+    color: #d63384;
+    padding: 5px;
+}
+
+.code-block{
+    background-color: #202020;
+    color: #d4d4d4;
+    border-radius: 5px;
+    padding: 5px;
+}
+.code-block li{
+    list-style: none;
+}
+
+.code-block .tag{
+    color: #569cd6;
+}
+
+.code-block .attribute{
+    color: #9cdcfe;
+}
+
+.code-block .value{
+    color: #ce9178;
+}
+
+.code-block .open-close-char{
+    color: #808080;
+}
+
+.code-block li{
+    font-weight: unset;
+}
+
+.image-section{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.image-section img{
+    border-style: ridge;
+    border-width: 5px;
+}
+
