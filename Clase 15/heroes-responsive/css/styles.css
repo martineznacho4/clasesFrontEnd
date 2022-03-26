@@ -57,7 +57,7 @@ body {
 /* Backgrounds */
 
 .batman {
-    background-image: url(/img/portada-batman.png);
+    background-image: url(../img/portada-batman.png);
 }
 
 .harley {
@@ -116,6 +116,18 @@ body {
     margin-bottom: 2rem;
     color: #F3F3F3;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* MEDIA QUERIES :D */

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./css/style-form.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Formulario</title>
+</head>
+
+<!-- https://www.figma.com/file/9XZ12ORXQuvMNg3ydKQtFo/Formulario-ll?node-id=0%3A1 -->
+
+<body>
+    <main>
+        <form action="./heroes/" method="POST">
+            <h1>Añadí tu super!</h1>
+            <p>Agrega tu personaje favorito completando las opciones</p>
+            <section id="formulario">
+                <fieldset id="left-field">
+                    
+                    <div>
+                        <label for="username">*Nombre:</label>
+                        <input type="text" name="username" id="username">
+                    </div>
+
+                    <div>
+                        <label for="date">Fecha</label>
+                        <input type="date" name="date" id="date">
+                    </div>
+                    
+                    <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Descripcion"></textarea>
+                    
+                </fieldset>
+                
+                <fieldset id="right-field">
+                    <label for="especie">*Especie:</label>
+                    <select name="especie" id="especie">
+                        <option value="none" selected>-</option>
+                        <option value="humano">Humano</option>
+                        <option value="enano">Enano</option>
+                    </select>
+
+                    <label for="photo">Agregar foto</label>
+                    <input type="file" name="photo" id="photo">
+                    
+                    <label>Poderes</label>
+                    <label for="Volar">
+                        <input type="checkbox" name="poderes" id="Volar" value="Volar">
+                        Volar
+                    </label>
+
+                    <label for="Inteligencia">
+                        <input type="checkbox" name="poderes" id="Inteligencia" value="Superinteligencia">
+                        SuperInteligencia
+                    </label>
+                    
+                    <label for="Rayos-laser">
+                        <input type="checkbox" name="poderes" id="Rayos-laser" value="Vista de rayos laser">
+                        Vista de rayos laser
+                    </label>
+
+                    <label for="Dinero">
+                        <input type="checkbox" name="poderes" id="Dinero" value="Billetera gorda">
+                        Billetera gorda
+                    </label>
+                    <span id="tipo-personaje"></span>
+                    <label>Tipo de personaje</label>
+                    <label for="heroe">
+                    <input type="radio" name="personaje" id="personaje" value="Heroe/Heroina">
+                        Heroe/Heroina
+                    </label>
+
+                    <label for="villano">
+                    <input type="radio" name="personaje" id="personaje" value="Villano/Villana">
+                        Villano/Villana
+                    </label>
+                </fieldset>
+
+                
+            </section>
+            <input type="submit" value="Añadir">
+
+
+        </form>
+        
+    </main>
+</body>
+</html>
