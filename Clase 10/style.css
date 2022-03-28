@@ -1,0 +1,26 @@
+div {
+    background-color: white;
+    display: inline;
+    margin:1px;
+    border: white 1px;
+    margin: 2px;
+    
+;}
+
+body {
+    background: black;
+
+}
+
+#cielo {
+    display:block;
+    background-color: black;
+    border:none;
+}
+
+#averiado {
+    background-color: red;
+    position: relative;
+    bottom: -100px;
+    
+}
