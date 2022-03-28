@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\style.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+
+    <title>Soy Henry -> HTML</title>
+</head>
+<body>
+    <header>
+        <img src="https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-sm.png" alt="">
+        <div class="header-text-container">
+            <span class="header-text"> HTML/CSS</span>
+            | 
+            <span>Henry Prep Course </span>
+        </div>
+    </header>
+
+    <main>
+        <nav class="nav-left">
+            <h4>Contenido de la clase</h4>
+
+            <h5>Introduccion a HTML</h5>
+                <ul class="nav-u-list">
+                    <li><a href="">Elementos basicos HTML</a></li>
+                    <li><a href="">Atributos</a></li>
+                    <li><a href="">Tags</a></li>
+                </ul>
+
+            <h5>Introduccion a CSS</h5>
+                <ul class="nav-u-list">
+                    <li> <a href=""> Atributo Style </a></li>
+                    <li> <a href=""> &ltstyle&gt </a></li>
+                    <li> <a href=""> &ltlink&gt </a></li>
+                    <li> <a href=""> Selectores </a></li>
+                </ul>
+            
+            <h5>Aplicando reglas</h5>
+            <h5>Box Model</h5>
+                <ul class="nav-u-list">
+                    <li><a href="">height y widht</a></li>
+                    <li><a href="">margin</a></li>
+                    <li><a href="">border</a></li>
+                    <li><a href="">padding</a></li>
+                    <li><a href="">Calculo de box model</a></li>
+                </ul>
+
+            <h5>Otras propiedades CSS</h5>
+                <ul class="nav-u-list">
+                    <li><a href="">background</a></li>
+                    <li><a href="">color</a></li>
+                    <li><a href="">font-size</a></li>
+                </ul>
+            <h5>Hojas de estilo externas y el elemento &ltlink&gt</h5>
+            <h5>Recursos adicionales</h5>
+
+        </nav>
+        
+            
+        <section>
+            <h1>HTML/CSS</h1>
+            
+            <h2>Fundamentos</h2>
+            <p>En esta clase veremos</p>
+            <ul>
+                <li>Introduccion a HTML</li>
+                <li>Elementos/tags HTML basicos</li>
+                <li>Introduccion a CSS</li>
+                <li>Selectores CSS y el tag &ltstyle&gt</li>
+                <li>Estilos Basicos</li>
+                <li>Modelo de Caja</li>
+                <li>Hojas de estilos externas y el tag &ltlink&gt</li>
+            </ul>
+
+            <h2>Introduccion a HTML</h2>
+
+            <p>
+                HTML es el bloque básico con el que está construido internet. Todas las páginas web utilizan HTML. <em> No es un lenguaje de programación </em> propiamente dicho, sino, es un lenguaje de <a href=""> Markup</a>: son lenguajes que incorporan al texto marcas o etiquetas que luego son interpretadas para darle información extra sobre la estructura del texto. En el caso de HTML, este será interpretado por los browsers, que tambien presentaran el código en forma gráfica.
+            </p>
+
+            <p>HTML es la abreviatura de Hyper Text Markup Language</p>
+            <ul>
+                <li>Hyper Text: “Hyper Texto” quiere decir <a href=""> texto con links </a></li>
+                <li>Markup Language: Los “Lenguajes de Marcado” son lenguajes de programación basados en etiquetas que uno agrega a un texto para darle estructura e información adicional. A diferencia de los “Lenguajes de Scripting” que se usan para crear programas informáticos, los lenguajes de marcado son sólo reglas para ordenar un documento.</li>
+            </ul>
+
+            <h2>Elementos basicos HTML</h2>
+            <p> HTML define una serie de elementos (o etiquetas, o tags) que serviran para delimitar texto. Cada tag está encerrado en <span class="tag-text">&lt &gt</span> y tiene un nombre. Los tags se abren y se cierran, los tags de cerrado incluyen con un “/” en el principio del tag que cierra. Por ejemplo:</p>
+
+            <div class="code-block">
+                <ul>
+                    <li> 
+                        <span class='open-close-char'>&lt</span>
+                        <span class="tag">element</span>
+                        <span class='open-close-char'>&gt</span>
+                    </li>
+
+                    <li> . . .</li>
+                    
+                    <li> 
+                        <span class='open-close-char'>&lt/</span>
+                        <span class="tag"> element </span>
+                        <span class='open-close-char'>&gt</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="image-section">
+                <img src="https://prep.soyhenry.com/_src/assets/08-HTML/html.jpg" alt="">
+            </div>
+
+            <p>Algunos tags html, por su naturaleza, no necesitan tener nada <em>adentro</em>. Por lo tanto podemos abreviar su escritura y en vez de abrir y cerrar el tag, simplemente agregamos un “/” antes del bracket final.</p>
+
+            <div class="code-block">
+                <ul>
+                    <li>
+                        <span class='open-close-char'>&lt</span>
+                        <span class="tag"> img </span>
+                        <span class="attribute">src</span>
+                        =
+                        <span class="value">'http://imagen.com/img.jpg'</span>
+                        <span class='open-close-char'>/&gt</span>
+                    </li>
+                </ul>
+            </div>
+
+            <h2>Atributos</h2>
+            
+            <p> En su mayoría de los atributos de un elemento son pares <em>nombre-valor</em>, separados por un signo de igual «=» y escritos en la etiqueta de comienzo de un elemento, después del nombre del elemento. El valor puede estar rodeado por comillas dobles o simples. Los atributos de los tags nos sirven para cambiar su comportamiento o <em>configurarlos</em>.</p>
+            
+            <p>Por ejemplo, el tag <span class="tag-text">&ltimg&gt</span> sirve para mostrar una imagen. Este tag recibe el atributo <span class="tag-text">src</span> que indica la <a href="">URL</a> de donde esta la imagen que queremos mostrar.</p>
+
+            <div class="code-block">
+                <ul>
+                    <li>
+                        <span class='open-close-char'>&lt</span>
+                        <span class="tag"> img </span>
+                        <span class="attribute">src</span>
+                        =
+                        <span class="value">'http://imagen.com/img.jpg'</span>
+                        <span class='open-close-char'>/&gt</span>
+                    </li>
+                </ul>
+            </div>
+
+            <h2>Tags</h2>
+
+            <h3>&lthtml&gt</h3>
+            <p>El tag <span class="tag-text">&lthtml&gt</span> va a contener a los demas tags dentro suyo. Este tag basicamente sirve para avisarle al browser que el contenido debe ser interpretado como <span class="tag-text">html</span></p>
+
+            <h3>&lthead&gt</h3>
+            <p>Este tag sirve para contener tags que contengan informacion sobre el documento, pero es informacion que no queremos que se renderee. Comunmente contiene el <em>titulo</em> de la pagina y <em>links</em> a recursos que pueda usar la pagina (javascript o css)</p>
+
+            <h3>&lttitle&gt</h3>
+            <p>Es el titulo de la pagina, se mostrara en el tab del browser o en la parte superior (pero no en la pagina)</p>
+            
+            <h3>&ltbody&gt</h3>
+            <p>En este tag estara encerrado todo lo que queramos que se vea en la pantalla</p>
+            <p>Entonces, hasta ahora, un documento HTML se ve asi</p>
+
+            <div class="code-block">
+                <ul>
+                    <li><span class="open-close-char">&lt</span><span class="tag">html</span><span class="open-close-char">&gt</span></li>
+                        <ul>
+                            <li><span class="open-close-char">&lt</span><span class="tag">head</span><span class="open-close-char">&gt</span></li>
+                                <ul>
+                                    <li><span class="open-close-char">&lt</span><span class="tag">title</span><span class="open-close-char">&gt</span>Es el titulo de nuestra pagina <span class="open-close-char">&lt</span><span class="tag">title</span><span class="open-close-char">&gt</span></li>
+                                </ul>
+                            <li><span class="open-close-char">&lt/</span><span class="tag">head</span><span class="open-close-char">&gt</span></li>
+                            <br>
+                            <li><span class="open-close-char">&lt</span><span class="tag">body</span><span class="open-close-char">&gt</span></li>
+                            <li><span class="open-close-char">&lt/</span><span class="tag">body</span><span class="open-close-char">&gt</span></li>
+                        </ul>
+                    <li><span class="open-close-char">&lt/</span><span class="tag">html</span><span class="open-close-char">&gt</span></li>
+                </ul>
+            </div>
+            
+            <p>Como ven, para mayor facilidad en la lectura y la estructuracion del documento, el documento HTML se escribe <a href="">indentando (o usando sangria)</a></p>
+            <p>(Todos los tags que presentaremos abajo van siempre dentro de un tag <span class="tag-text">&ltbody&gt</span>)</p>
+
+
+            <h3>&ltp&gt</h3>
+            <p>Es el tag para los parrafos. Mostrara el texto contenido dentro en una nueva linea</p>
+
+            <div class="code-block">
+                <ul>
+                    <li><span class="open-close-char">&lt</span><span class="tag">p</span><span class="open-close-char">&gt</span>Soy un parrafo <span class="open-close-char">&lt/</span><span class="tag">p</span><span class="open-close-char">&gt</span></li>
+                </ul>
+            </div>
+
+
+            <h3>&ltspan&gt</h3>
+            <p>El elemento span es un contenedor de texto generico. No inserta una nueva linea, como lo gace el elemento p. Sirve basicamente para darle estilo al texto</p>
+            
+            <h3>&ltdiv&gt</h3>
+            <p>El elemento div es un <em>contenedor</em> generico. Es usado principalmente para dar estilo, imaginen que es una caja (cuyo tamano y color podes modificar a <em>piacere</em>), y que dentro podes poner otras cajas iguales</p>
+            
+            <h3>&lta&gt</h3>
+            <p>El tag a (del ingles <em>anchor</em>), nos permite crear <strong>links</strong> a otros documentos y pagina. Este tag recive el <em>atributo</em> <span class="tag-text">href</span> que indica a donde apunta el link</p>
+
+            <div class="code-block">
+                <ul>
+                    <li>
+                        <span class='open-close-char'>&lt</span>
+                        <span class="tag">a</span>
+                        <span class="attribute">href</span>
+                        =
+                        <span class="value">'http://digitalhouse.com'</span>
+                        <span class='open-close-char'>/&gt</span>
+                        Esto es un link!
+                        <span class='open-close-char'>&lt/</span>
+                        <span class="tag">a</span>
+                        <span class='open-close-char'>&gt</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <h3>&lth1&gt ... &lth6&gt</h3>
+            <p>Son los tags de encabezado o titulos, estan pensados del 1 al 6, para indicar la importancia del contenido y su jerarquia</p>
+
+            <div class="code-block">
+                <ul>
+                    <li>
+                        <span class="open-close-char">&lt</span>
+                        <span class="tag">h1</span>
+                        <span class="open-close-char">&gt</span>
+                        El titulo mas importante!
+                        <span class="open-close-char">&lt/</span>
+                        <span class="tag">h1</span>
+                        <span class="open-close-char">&gt</span>
+                    </li>
+
+                    <li>
+                        <span class="open-close-char">&lt</span>
+                        <span class="tag">h3</span>
+                        <span class="open-close-char">&gt</span>
+                        El titulo medianamente importante!
+                        <span class="open-close-char">&lt/</span>
+                        <span class="tag">h3</span>
+                        <span class="open-close-char">&gt</span>
+                    </li>
+                    <li>
+                        <span class="open-close-char">&lt</span>
+                        <span class="tag">h6</span>
+                        <span class="open-close-char">&gt</span>
+                        El titulo menos importante!
+                        <span class="open-close-char">&lt/</span>
+                        <span class="tag">h6</span>
+                        <span class="open-close-char">&gt</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <h3>&ltimg&gt</h3>
+            <p>Este tag nos permite mostrar imagenes en la pantalla. Necesita el atributo <span class="tag-text">scr</span> que indica la <em>URL</em> de donde sacar la imagen a mostrar</p>
+
+            <div class="code-block">
+                <ul>
+                    <li>
+                        <span class='open-close-char'>&lt</span>
+                        <span class="tag"> img </span>
+                        <span class="attribute">src</span>
+                        =
+                        <span class="value">'http://imagen.com/img.jpg'</span>
+                        <span class='open-close-char'>/&gt</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <h3>&ltul&gt</h3>
+            <p>Este tag representa una lista desordenada (del ingles "unordered list"). Este tag esta disenado para contener otros tags de tipo item. Tambien existe el tag <span class="tag-text">&ltol&gt</span> que viene de "ordered list"</p>
+            
+            <h3>&ltli&gt</h3>
+            <p>Son los tags que contienen los items de la lista ("list item")</p>
+
+            <div class="code-block">
+                <ul>
+                    <li>
+                        <span class="open-close-char">&lt</span>
+                        <span class="tag">ul</span><span class="open-close-char">&gt</span>
+                    </li>
+                        <ul>
+                            <li>
+                                <span class="open-close-char">&lt</span>
+                                <span class="tag">li</span>
+                                <span class="open-close-char">&gt</span>
+                            </li>
+                                <ul>
+                                    <li>
+                                        <span class="open-close-char">&lt</span>
+                                        <span class="tag">span</span>
+                                        <span class="open-close-char">&gt</span>
+                                        Es el titulo de nuestra pagina
+                                        <span class="open-close-char">&lt</span>
+                                        <span class="tag">span</span>
+                                        <span class="open-close-char">&gt</span>
+                                    </li>
+                                </ul>
+                            <li>
+                                <span class="open-close-char">&lt/</span>
+                                <span class="tag">li</span>
+                                <span class="open-close-char">&gt</span>
+                            </li>
+                            
+                            <br>
+
+                            <li>
+                                <span class="open-close-char">&lt</span>
+                                <span class="tag">li</span>
+                                <span class="open-close-char">&gt</span>
+                            </li>
+                                <ul>
+                                    <li>
+                                        <span class="open-close-char">&lt</span>
+                                        <span class="tag">p</span>
+                                        <span class="open-close-char">&gt</span>
+                                        Podemos anidar cualquier tipo de tag adentro
+                                        <span class="open-close-char">&lt</span>
+                                        <span class="tag">p</span>
+                                        <span class="open-close-char">&gt</span>
+                                    </li>
+                                </ul>
+                            <li>
+                                <span class="open-close-char">&lt/</span>
+                                <span class="tag">li</span>
+                                <span class="open-close-char">&gt</span>
+                            </li>
+                            
+                            <br>
+
+                            <li>
+                                <span class="open-close-char">&lt</span>
+                                <span class="tag">li</span>
+                                <span class="open-close-char">&gt</span>
+                            </li>
+                                <ul>
+                                    <li>
+                                        <span class="open-close-char">&lt</span>
+                                        <span class="tag">span</span>
+                                        <span class="open-close-char">&gt</span>
+                                        Tercer elemento
+                                        <span class="open-close-char">&lt</span>
+                                        <span class="tag">span</span>
+                                        <span class="open-close-char">&gt</span>
+                                    </li>
+                                </ul>
+                            <li>
+                                <span class="open-close-char">&lt/</span>
+                                <span class="tag">li</span>
+                                <span class="open-close-char">&gt</span>
+                            </li>
+
+                        </ul>
+                    <li>
+                        <span class="open-close-char">&lt/</span>
+                        <span class="tag">ul</span>
+                        <span class="open-close-char">&gt</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+
+</body>
+</html>

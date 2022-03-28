@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    background-color: rgb(21, 21, 21);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    display: flex;
+    justify-content: left;
+}
+
+#logo{
+    display: flex;
+    justify-content: left;
+    font-size: 30px;
+}
+
+.left{
+    position: fixed;
+    width: 250px;
+    left: 20vw;
+}
+
+.fa-twitter{
+    padding-bottom: 30px;
+}
+
+.left nav {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.left ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.left .fa-solid{
+    padding-right: 10px;
+    width: 30px;
+}
+
+.left li{
+    padding-bottom: 30px;
+}
+
+#boton-twit{
+    padding: 10px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00BA7C;
+    border-radius: 50px;
+}
+
+
+.center{
+    border-color: black #00BA7C;
+    margin-left: calc(20vw + 255px);
+    width: calc(100vw / 3);
+    border-width: 1px;
+    border-style: solid;
+}
+
+.center header{
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.fa-arrow-left{
+    padding: 20px;
+}
+
+#title{
+    padding-left: 20px;
+}
+
+.name{
+    font-size: 20px;
+    font-weight: bolder;
+    display: inline;
+}
+
+#portada {
+    background-color: rgb(78, 78, 78);
+    height: 200px;
+}
+
+#perfil{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#perfil a, .perfil-header{
+    position: relative;
+    bottom: 50%;
+    left: 20px;
+    border-radius: 50%;
+    height: 150px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    
+}
+
+
+/* #perfil a{
+    position: relative;
+    border-radius: 50%;
+    border-color: aqua;
+    border-style: solid;
+        
+
+} */
