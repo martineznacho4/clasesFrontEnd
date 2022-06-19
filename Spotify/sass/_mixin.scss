@@ -1,0 +1,145 @@
+
+@mixin reset(){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing:border-box;
+    }
+
+    li{
+        list-style: none;
+        color: $fontColor;
+    }
+
+    a{
+        text-decoration: none;
+        }
+    }
+
+    body{
+        background-color: $colorFondo;
+        font-family: $fontFamiliy;
+        font-size: $fontSize;
+    }
+
+
+@mixin boton{
+    background-color: $colorPrincipal;
+    padding: 10px 25px;
+    border-radius: 25px;
+    color: $colorSecundario;
+}
+
+@mixin sizeWH($width, $height){
+    width: $width;
+    height: $height;
+}
+
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexAround{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+@mixin flexBetween{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@mixin media1024px{
+    @media (max-width: 1024px) {
+        
+        main {
+            background-image: url(../img/bursts-tablet.svg);
+            background-size: 153%;
+            background-position: right 40% center;
+        }
+    }
+}
+
+@mixin media768px{
+    @media (max-width: 768px){
+
+        header{
+            height: 5vh;
+            li, p, .fa-angle-down{
+                display: none;
+            }
+            .fa-bars{
+                display: block;
+                font-size: 25px
+            }
+            #user{
+                justify-content: space-between;
+                img{
+                    padding: 20px;
+                    width: 75px;
+                }
+            }
+        }
+    .logo{
+        width: 150px;
+        height: fit-content;
+        position: relative;
+        top: -20px;
+    }
+    
+    .footer{
+        height: 60vh;
+        
+        &-main{
+            flex-direction: column;
+            align-items: flex-start;
+            section{
+                width: 90%;
+            }
+            #icons{
+                margin-left: 10px;
+                li{
+                    margin: 0 5px 10px;
+                }
+            }
+        }
+    }
+    }
+}
+
+@mixin media425px{
+    @media (max-width: 425px) {
+        
+        main{
+            background-image: url(../img/bursts-mobile.svg);
+            background-size: 215%;
+            background-position: center top 40%;
+            
+            h1{
+                font-size: 48px;
+            }
+        }
+        
+        .footer{
+            height: 105vh;
+            justify-content: space-between;
+            padding-left: 20px;
+            
+            &-main{
+                section{
+                    flex-direction: column;
+                    ul{
+                        margin-bottom: 50px;
+                    }
+                    h5{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

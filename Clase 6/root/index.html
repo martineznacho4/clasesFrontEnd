@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 
@@ -34,6 +35,7 @@
                 <li>Nosotros</li>
                 <li>Contactanos</li>
             </ul>
+            <i class="fa-solid fa-bars"></i>
         </nav>
     </header>
 
@@ -81,10 +83,26 @@
 
         <section id="contacto-form">
             <h2>Contáctanos</h2>
-            <div id="input-fields">
-                <p>Nombre y Apellido</p>
-                <p>Ingresá tu correo electrónico</p>
-                <p>Teléfono</p>
+
+            <form action="./datos" method="POST">
+                <section>
+                    <label for="nombre"></label>
+                    <input type="text" placeholder="Nombre y Apellido" name="nombre" id="nombre">
+                    
+                    <label for="email"></label>
+                    <input type="text" placeholder="Ingresa tu correo electronico" name="email" id="email">
+                    
+                    <label for="telefono"></label>
+                    <input type="text" placeholder="Telfono" name="telefono" id="telefono">
+                </section>
+                    
+                <section id="botones">
+                    <button type="reset">Resetear</button>
+                    <button type="submit" id="submit">Enviar</button>
+                </section>
+                
+            </form>
+
             </div>
             <div id="botones-form">
                 <a href="resetear.html" id="reset">Resetear</a>

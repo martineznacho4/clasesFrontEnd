@@ -1,0 +1,147 @@
+@import '_variables';
+@import '_mixin';
+
+@include reset;
+
+// Header
+
+
+header{
+    @include flexBetween;
+    max-width: 970px;
+    margin: 0 auto;
+
+    ul{
+        @include flexAround;
+        align-items: center;
+        width: 50%;
+    }
+
+    #user{
+        @include flexCenter;
+        img{
+            border-radius: 50%;
+        }
+    }
+    p{
+        margin: 0 20px;
+    }
+    .fa-bars{
+        display: none;
+    }
+}
+.logo{
+    width: 150px;
+
+}
+
+main{
+    background-color: $colorSecundario;
+    height: 100vh;
+    background-image: url(../img/bursts.svg);
+    background-size: 175%;
+    background-position: 46% 4%;
+    background-repeat: no-repeat;
+
+    @include flexCenter;
+    flex-direction: column;
+    margin: 0 auto;
+
+    h1{
+        color: $colorPrincipal;
+        font-size: $titleSize;
+        font-weight: 900;
+    }
+    p{
+        color: $colorPrincipal;
+        margin: 30px 0;
+    }
+    a{
+        @include boton;
+    }
+}
+
+.footer{
+    @include flexCenter;
+    align-items: stretch;
+    flex-direction: column;
+    max-width: 970px;
+    margin: 0 auto;
+    height: 50vh;
+
+    h5{
+        color: $fontColorFooter;
+    }
+
+    &-main{
+        @include flexBetween;
+        height: 70%;
+        ul, img{
+            height: fit-content;
+        }
+        li, h5{
+            margin-bottom: 25px;
+        }
+
+        section{
+            display: flex;
+            justify-content: space-around;
+            width: 60%;
+        }
+
+        #icons{
+            margin-left: 150px;
+            @include flexCenter;
+            li{
+                
+                background-color: $fontColorIcons;
+                @include sizeWH(30px,30px);
+                @include flexCenter;
+                padding: 20px;
+                border-radius: 50%;
+            }
+            a{
+                color: $fontColor;
+            }
+        }
+    }
+    &-bottom{
+        @include flexBetween;
+        flex-direction: column;
+        font-size: $fontSizeFooter;
+        span{
+            display: flex;
+            justify-content: flex-end;
+            color: $fontColorFooter
+        }
+
+        ul{
+            @include flexBetween;
+        }
+
+        div{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        li{
+            margin-right: 20px;
+            color: $fontColorFooter;
+        }
+        p{
+            color: $fontColorFooter;
+        }
+    }
+}
+
+li:hover, span:hover{
+    color: $colorPrincipal;
+}
+
+
+@include media1024px;
+
+@include media768px; 
+
+@include media425px;

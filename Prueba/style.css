@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.button{
+    padding: 10px 20px;
+    height: 5vh;
+    width: 10vw;
+    border-radius: 20px;
+    border-color: #62C0DC;
+    border-style: solid;
+    font-size: 1.1rem;
+}
+
+.primary{
+    background-color: #62C0DC;
+}
+
+.secondary{
+    background-color: #fff;
+}
+
+.disbaled{
+    
+}
